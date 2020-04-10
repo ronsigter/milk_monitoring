@@ -30,7 +30,7 @@ const Home = () => {
   const thawedCount = state.storages.filter((milk) => milk.state === 'thawed')
     .length;
 
-  const lastItem = state.storages.pop();
+  const lastItem = state.storages.slice(-1)[0];
 
   return (
     <>
