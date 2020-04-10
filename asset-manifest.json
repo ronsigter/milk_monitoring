@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/milk_monigtoring/static/js/main.78eac2fb.chunk.js",
-    "main.js.map": "/milk_monigtoring/static/js/main.78eac2fb.chunk.js.map",
-    "runtime-main.js": "/milk_monigtoring/static/js/runtime-main.e71f6d07.js",
-    "runtime-main.js.map": "/milk_monigtoring/static/js/runtime-main.e71f6d07.js.map",
-    "static/css/2.de424728.chunk.css": "/milk_monigtoring/static/css/2.de424728.chunk.css",
-    "static/js/2.5ebbad14.chunk.js": "/milk_monigtoring/static/js/2.5ebbad14.chunk.js",
-    "static/js/2.5ebbad14.chunk.js.map": "/milk_monigtoring/static/js/2.5ebbad14.chunk.js.map",
-    "index.html": "/milk_monigtoring/index.html",
-    "precache-manifest.d0d1b11feb9be45c93cace225e9e5e1e.js": "/milk_monigtoring/precache-manifest.d0d1b11feb9be45c93cace225e9e5e1e.js",
-    "service-worker.js": "/milk_monigtoring/service-worker.js",
-    "static/css/2.de424728.chunk.css.map": "/milk_monigtoring/static/css/2.de424728.chunk.css.map",
-    "static/js/2.5ebbad14.chunk.js.LICENSE.txt": "/milk_monigtoring/static/js/2.5ebbad14.chunk.js.LICENSE.txt"
+    "main.js": "/milk_monitoring/static/js/main.78eac2fb.chunk.js",
+    "main.js.map": "/milk_monitoring/static/js/main.78eac2fb.chunk.js.map",
+    "runtime-main.js": "/milk_monitoring/static/js/runtime-main.bf47cf16.js",
+    "runtime-main.js.map": "/milk_monitoring/static/js/runtime-main.bf47cf16.js.map",
+    "static/css/2.de424728.chunk.css": "/milk_monitoring/static/css/2.de424728.chunk.css",
+    "static/js/2.e160258d.chunk.js": "/milk_monitoring/static/js/2.e160258d.chunk.js",
+    "static/js/2.e160258d.chunk.js.map": "/milk_monitoring/static/js/2.e160258d.chunk.js.map",
+    "index.html": "/milk_monitoring/index.html",
+    "precache-manifest.84023c372f69fc7668fee974baf681f9.js": "/milk_monitoring/precache-manifest.84023c372f69fc7668fee974baf681f9.js",
+    "service-worker.js": "/milk_monitoring/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/milk_monitoring/static/css/2.de424728.chunk.css.map",
+    "static/js/2.e160258d.chunk.js.LICENSE.txt": "/milk_monitoring/static/js/2.e160258d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e71f6d07.js",
+    "static/js/runtime-main.bf47cf16.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.5ebbad14.chunk.js",
+    "static/js/2.e160258d.chunk.js",
     "static/js/main.78eac2fb.chunk.js"
   ]
 }
