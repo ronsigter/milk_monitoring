@@ -1,22 +1,24 @@
-import React, { useContext } from "react";
+import React, { useContext } from 'react';
 
-import { StateContext } from "../Context";
+import { StateContext } from '../Context';
 
-import Container from "react-bootstrap/Container";
-import Table from "react-bootstrap/Table";
-import Button from "react-bootstrap/Button";
+import Container from 'react-bootstrap/Container';
+import Table from 'react-bootstrap/Table';
+import Button from 'react-bootstrap/Button';
 
-const Storage = ({ status = "freeze" }) => {
+const Storage = ({ status = 'freeze' }) => {
   const { state, dispatch } = useContext(StateContext);
 
-  const handleThaw = storage => {
+  const handleThaw = (storage) => {
     dispatch({
-      type: status === "freeze" ? "thaw" : "done",
-      payload: storage
+      type: status === 'freeze' ? 'thaw' : 'done',
+      payload: storage,
     });
   };
 
-  const unThawed = state.storages.filter(storage => storage.state === status);
+  const unThawed = state.storages
+    .filter((storage) => storage.state === status)
+    .reverse();
 
   return (
     <Container>
@@ -24,26 +26,26 @@ const Storage = ({ status = "freeze" }) => {
         <thead>
           <tr>
             <th>#</th>
-            <th>{status === "freeze" ? "Pump Date" : "Thawed Date"}</th>
+            <th>{status === 'freeze' ? 'Pump Date' : 'Thawed Date'}</th>
             <th>Quantity</th>
             <th>Expiration</th>
             {/* <th>Actions</th> */}
           </tr>
         </thead>
         <tbody>
-          {unThawed.map(storage => (
+          {unThawed.map((storage) => (
             <tr key={storage.id}>
               <td>{storage.id}</td>
-              <td>{status === "freeze" ? storage.date : storage.thawedDate}</td>
+              <td>{status === 'freeze' ? storage.date : storage.thawedDate}</td>
               <td>{storage.quantity} mL</td>
               <td>
-                {status === "freeze"
+                {status === 'freeze'
                   ? storage.expiration
                   : storage.thawedExpiration}
               </td>
               {/* <td>
                 <Button onClick={() => handleThaw(storage)}>
-                  {status === "freeze" ? "Thaw" : "Done"}
+                  {status === 'freeze' ? 'Thaw' : 'Done'}
                 </Button>
               </td> */}
             </tr>
