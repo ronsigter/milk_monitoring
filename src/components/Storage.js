@@ -12,7 +12,7 @@ const Storage = ({ status = 'freeze' }) => {
   const handleThaw = (storage) => {
     dispatch({
       type: status === 'freeze' ? 'thaw' : 'done',
-      payload: storage,
+      payload: storage
     });
   };
 
@@ -29,7 +29,7 @@ const Storage = ({ status = 'freeze' }) => {
             <th>{status === 'freeze' ? 'Pump Date' : 'Thawed Date'}</th>
             <th>Quantity</th>
             <th>Expiration</th>
-            {/* <th>Actions</th> */}
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -43,11 +43,14 @@ const Storage = ({ status = 'freeze' }) => {
                   ? storage.expiration
                   : storage.thawedExpiration}
               </td>
-              {/* <td>
-                <Button onClick={() => handleThaw(storage)}>
+              <td>
+                <Button
+                  onClick={() => handleThaw(storage)}
+                  variant={status === 'freeze' ? 'info' : 'success'}
+                >
                   {status === 'freeze' ? 'Thaw' : 'Done'}
                 </Button>
-              </td> */}
+              </td>
             </tr>
           ))}
         </tbody>

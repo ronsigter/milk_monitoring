@@ -12,19 +12,17 @@ import { StateContext } from './Context';
 
 function App() {
   const [view, setView] = useState('home');
-  const { state, dispatch } = useContext(StateContext);
-
-  console.log(state.storages);
+  const { dispatch } = useContext(StateContext);
 
   useEffect(() => {
     Tabletop.init({
       key:
         'https://docs.google.com/spreadsheets/d/1C7HAwFojqKU5Yd4nFLwyPQg9iTNAoTNDAaSE1ftWuBM/edit?usp=sharing',
-      simpleSheet: true,
+      simpleSheet: true
     }).then((data) => {
       dispatch({
         type: 'storages',
-        payload: data,
+        payload: data
       });
     });
   }, []);
@@ -51,9 +49,9 @@ function App() {
             <Nav.Item>
               <Nav.Link eventKey='storage'>Storage</Nav.Link>
             </Nav.Item>
-            {/* <Nav.Item>
+            <Nav.Item>
               <Nav.Link eventKey='thawed'>Thawed</Nav.Link>
-            </Nav.Item> */}
+            </Nav.Item>
           </Nav>
         </Col>
       </Row>
@@ -74,7 +72,7 @@ const headerStyle = {
   background: '#333',
   color: '#fff',
   textAlign: 'center',
-  paddin: '10px',
+  paddin: '10px'
 };
 
 export default App;

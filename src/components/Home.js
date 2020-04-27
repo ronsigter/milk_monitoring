@@ -7,8 +7,7 @@ import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPrescriptionBottle,
-  faArchive,
-  faIcicles,
+  faIcicles
 } from '@fortawesome/free-solid-svg-icons';
 
 import AddItem from './AddItem';
@@ -117,7 +116,7 @@ const Home = () => {
 };
 
 const summaryStyle = {
-  margin: '16px',
+  margin: '16px'
 };
 
 export default Home;
