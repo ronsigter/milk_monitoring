@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/milk_monitoring/static/js/main.81d020b7.chunk.js",
-    "main.js.map": "/milk_monitoring/static/js/main.81d020b7.chunk.js.map",
+    "main.js": "/milk_monitoring/static/js/main.0fabb754.chunk.js",
+    "main.js.map": "/milk_monitoring/static/js/main.0fabb754.chunk.js.map",
     "runtime-main.js": "/milk_monitoring/static/js/runtime-main.bf47cf16.js",
     "runtime-main.js.map": "/milk_monitoring/static/js/runtime-main.bf47cf16.js.map",
     "static/css/2.de424728.chunk.css": "/milk_monitoring/static/css/2.de424728.chunk.css",
-    "static/js/2.e160258d.chunk.js": "/milk_monitoring/static/js/2.e160258d.chunk.js",
-    "static/js/2.e160258d.chunk.js.map": "/milk_monitoring/static/js/2.e160258d.chunk.js.map",
+    "static/js/2.ba1380ce.chunk.js": "/milk_monitoring/static/js/2.ba1380ce.chunk.js",
+    "static/js/2.ba1380ce.chunk.js.map": "/milk_monitoring/static/js/2.ba1380ce.chunk.js.map",
     "index.html": "/milk_monitoring/index.html",
-    "precache-manifest.8c9adcfa23107f15b4a2e511e8ea7e1b.js": "/milk_monitoring/precache-manifest.8c9adcfa23107f15b4a2e511e8ea7e1b.js",
+    "precache-manifest.7db1949098edfaf597696864e0b6935d.js": "/milk_monitoring/precache-manifest.7db1949098edfaf597696864e0b6935d.js",
     "service-worker.js": "/milk_monitoring/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/milk_monitoring/static/css/2.de424728.chunk.css.map",
-    "static/js/2.e160258d.chunk.js.LICENSE.txt": "/milk_monitoring/static/js/2.e160258d.chunk.js.LICENSE.txt"
+    "static/js/2.ba1380ce.chunk.js.LICENSE.txt": "/milk_monitoring/static/js/2.ba1380ce.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bf47cf16.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.e160258d.chunk.js",
-    "static/js/main.81d020b7.chunk.js"
+    "static/js/2.ba1380ce.chunk.js",
+    "static/js/main.0fabb754.chunk.js"
   ]
 }

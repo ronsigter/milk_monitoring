@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/milk_monitoring/precache-manifest.8c9adcfa23107f15b4a2e511e8ea7e1b.js"
+  "/milk_monitoring/precache-manifest.7db1949098edfaf597696864e0b6935d.js"
 );
 
 self.addEventListener('message', (event) => {
