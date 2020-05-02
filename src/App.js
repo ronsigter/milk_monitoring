@@ -44,13 +44,13 @@ function App() {
             onSelect={(selectedKey) => setView(selectedKey)}
           >
             <Nav.Item>
-              <Nav.Link eventKey='home'>Home</Nav.Link>
+              <Nav.Link eventKey='home'>Bahay</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey='storage'>Storage</Nav.Link>
+              <Nav.Link eventKey='storage'>Imbakan</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey='thawed'>Thawed</Nav.Link>
+              <Nav.Link eventKey='thawed'>Tunaw na Gatas</Nav.Link>
             </Nav.Item>
           </Nav>
         </Col>

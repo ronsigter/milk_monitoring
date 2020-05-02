@@ -1,10 +1,10 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext } from 'react';
 
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
-import InputGroup from "react-bootstrap/InputGroup";
-import FormControl from "react-bootstrap/FormControl";
-import { StateContext } from "../Context";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import InputGroup from 'react-bootstrap/InputGroup';
+import FormControl from 'react-bootstrap/FormControl';
+import { StateContext } from '../Context';
 
 const AddItem = () => {
   const [show, setShow] = useState(false);
@@ -16,7 +16,7 @@ const AddItem = () => {
 
   const handleStore = () => {
     dispatch({
-      type: "store",
+      type: 'store',
       payload: quantity
     });
     handleClose();
@@ -24,8 +24,8 @@ const AddItem = () => {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Add new Milk
+      <Button variant='primary' onClick={handleShow}>
+        Magdagdag ng gatas sa palamigan
       </Button>
 
       <Modal show={show} onHide={handleClose} centered>
@@ -33,16 +33,16 @@ const AddItem = () => {
           <Modal.Title>Woohoo! Another Milk for ZL!</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <InputGroup size="sm" className="mb-3">
+          <InputGroup size='sm' className='mb-3'>
             <InputGroup.Prepend>
-              <InputGroup.Text id="inputGroup-sizing-sm">
+              <InputGroup.Text id='inputGroup-sizing-sm'>
                 Quantity
               </InputGroup.Text>
             </InputGroup.Prepend>
             <FormControl
-              aria-label="Small"
-              aria-describedby="inputGroup-sizing-sm"
-              onChange={e => setQuantity(e.target.value)}
+              aria-label='Small'
+              aria-describedby='inputGroup-sizing-sm'
+              onChange={(e) => setQuantity(e.target.value)}
               value={quantity}
             />
             <InputGroup.Append>
@@ -51,10 +51,10 @@ const AddItem = () => {
           </InputGroup>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant='secondary' onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleStore}>
+          <Button variant='primary' onClick={handleStore}>
             Store
           </Button>
         </Modal.Footer>

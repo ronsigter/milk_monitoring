@@ -44,7 +44,7 @@ const Home = () => {
         <Col xs={12} style={summaryStyle}>
           <Container>
             <Row>
-              <Col>Last Count</Col>
+              <Col>Huling Bilang</Col>
               <Col>
                 <p className='text-center'>{lastItem.id}</p>
               </Col>
@@ -54,7 +54,7 @@ const Home = () => {
         <Col xs={12} style={summaryStyle}>
           <Container>
             <Row>
-              <Col>Last Storing Date</Col>
+              <Col>Huling petsa ng pag-iimbak</Col>
               <Col>
                 <p className='text-center'>{lastItem.date}</p>
               </Col>
@@ -65,7 +65,8 @@ const Home = () => {
           <Container>
             <Row>
               <Col>
-                Total Stored <FontAwesomeIcon icon={faPrescriptionBottle} />
+                Kabuuang gatas na naimbak{' '}
+                <FontAwesomeIcon icon={faPrescriptionBottle} />
               </Col>
               <Col>
                 <p className='text-center'>{storedCapacity} mL</p>
@@ -76,7 +77,7 @@ const Home = () => {
         <Col xs={12} style={summaryStyle}>
           <Container>
             <Row>
-              <Col>Total Consumed</Col>
+              <Col>Kabuuang gatas na nainom</Col>
               <Col>
                 <p className='text-center'>{consumedCapacity} mL</p>
               </Col>
@@ -87,7 +88,7 @@ const Home = () => {
           <Container>
             <Row>
               <Col>
-                Freeze Milk
+                Natitirang bilang ng mga pinatigas na gatas
                 <FontAwesomeIcon icon={faIcicles} />
               </Col>
               <Col>
@@ -99,7 +100,9 @@ const Home = () => {
         <Col xs={12} style={summaryStyle}>
           <Container>
             <Row>
-              <Col>Thawed Milk</Col>
+              <Col>
+                Kasalukuyang bilang ng mga tunaw na gatas sa loob ng palamigan
+              </Col>
               <Col>
                 <p className='text-center'>{thawedCount}</p>
               </Col>
