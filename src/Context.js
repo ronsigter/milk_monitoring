@@ -31,7 +31,7 @@ let reducer = (state, action) => {
         state: 'thawed',
         thawedDate: getDateToday(),
         thawedExpiration: getExpirationDate('thawed'),
-        id: Number(action.payload.id)
+        id: action.payload.id
       };
       console.log(item);
 
@@ -44,7 +44,7 @@ let reducer = (state, action) => {
 
     case 'done':
       var storages = state.storages;
-      var item = { state: 'done', id: Number(action.payload.id) };
+      var item = { state: 'done', id: action.payload.id };
       storages[
         storages.findIndex((storage) => storage.id === action.payload.id)
       ] = item;
