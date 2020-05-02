@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eb05ae80287e52b08cd044f573fea7d6",
+    "revision": "139d925791b45ee2952d2df6b25edb43",
     "url": "/milk_monitoring/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/milk_monitoring/static/js/2.ba1380ce.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6d828c52d60b8b88f3e8",
-    "url": "/milk_monitoring/static/js/main.be6bf097.chunk.js"
+    "revision": "e6aca99eaaf9e9c6f7f1",
+    "url": "/milk_monitoring/static/js/main.19891ac6.chunk.js"
   },
   {
     "revision": "233231701f7f13e03321",
