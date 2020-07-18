@@ -25,6 +25,8 @@ const Home = () => {
 
   const lastItem = state.storages.slice(-1)[0];
 
+  const remainingCapacity = storedCapacity - consumedCapacity;
+
   return (
     <>
       <Row>
@@ -38,7 +40,7 @@ const Home = () => {
         </Col>
       </Row>
       <Row className="justify-content-center">
-        <Col xs={12} style={summaryStyle}>
+        {/* <Col xs={12} style={summaryStyle}>
           <Container>
             <Row>
               <Col>Last Count</Col>
@@ -67,8 +69,18 @@ const Home = () => {
               </Col>
             </Row>
           </Container>
-        </Col>
+        </Col> */}
         <Col xs={12} style={summaryStyle}>
+          <Container>
+            <Row>
+              <Col>Remaining milk</Col>
+              <Col>
+                <p className="text-center">{remainingCapacity / 1000} L</p>
+              </Col>
+            </Row>
+          </Container>
+        </Col>
+        {/* <Col xs={12} style={summaryStyle}>
           <Container>
             <Row>
               <Col>Total drank milk</Col>
@@ -77,11 +89,11 @@ const Home = () => {
               </Col>
             </Row>
           </Container>
-        </Col>
+        </Col> */}
         <Col xs={12} style={summaryStyle}>
           <Container>
             <Row>
-              <Col>Current Frozen Milk</Col>
+              <Col>Remaining Frozen Milk</Col>
               <Col>
                 <p className="text-center">{freezeCount}</p>
               </Col>
@@ -100,9 +112,9 @@ const Home = () => {
         </Col>
       </Row>
 
-      <Row className="justify-content-center">
+      {/* <Row className="justify-content-center">
         <AddItem />
-      </Row>
+      </Row> */}
     </>
   );
 };
