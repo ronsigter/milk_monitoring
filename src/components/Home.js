@@ -49,8 +49,8 @@ const Home = () => {
               </Col>
             </Row>
           </Container>
-        </Col>
-        <Col xs={12} style={summaryStyle}>
+        </Col> */}
+        {/* <Col xs={12} style={summaryStyle}>
           <Container>
             <Row>
               <Col>Last Date of Storage</Col>
@@ -59,17 +59,17 @@ const Home = () => {
               </Col>
             </Row>
           </Container>
-        </Col>
+        </Col> */}
         <Col xs={12} style={summaryStyle}>
           <Container>
             <Row>
               <Col>Total stored milk</Col>
               <Col>
-                <p className="text-center">{storedCapacity} mL</p>
+                <p className="text-center">{storedCapacity / 1000} L</p>
               </Col>
             </Row>
           </Container>
-        </Col> */}
+        </Col>
         <Col xs={12} style={summaryStyle}>
           <Container>
             <Row>
@@ -95,7 +95,7 @@ const Home = () => {
             <Row>
               <Col>Remaining Frozen Milk</Col>
               <Col>
-                <p className="text-center">{freezeCount}</p>
+                <p className="text-center">{freezeCount} Bags</p>
               </Col>
             </Row>
           </Container>
@@ -105,7 +105,7 @@ const Home = () => {
             <Row>
               <Col>Current Thawed Milk</Col>
               <Col>
-                <p className="text-center">{thawedCount}</p>
+                <p className="text-center">{thawedCount} Bags</p>
               </Col>
             </Row>
           </Container>
